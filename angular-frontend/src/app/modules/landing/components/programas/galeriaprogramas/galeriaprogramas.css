@@ -1,0 +1,61 @@
+
+
+.tracklist{
+    
+    
+    background-image: linear-gradient(to bottom,rgb(255, 188, 101),rgb(231, 131, 39));
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    font-family: "Roboto";
+
+}
+
+h2{
+    font-family: "Roboto";
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.track{
+
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    padding: 18px;
+    border-bottom: 1px solid #735252;
+}
+
+.track:last-child{
+    border-bottom: none;
+}
+
+.track-header {
+    display: flex;
+    align-items: center;
+    gap:12px;
+}
+
+
+.track-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 6px;
+    max-width: 22px;
+}
+
+.audio-line{
+    display: flex;
+    margin: 30px auto 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    height: 32px;
+    border-radius: 6px;
+}
+img{
+    height: 70px;
+    width:70px;
+    object-fit: cover;
+    border-radius: 8px;
+}

@@ -1,0 +1,4 @@
+[submodule "angular-frontend"]
+	path = angular-frontend
+	url = https://github.com/dani-ram/angular-frontend.git
+    

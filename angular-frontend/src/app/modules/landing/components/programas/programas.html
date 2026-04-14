@@ -1,0 +1,28 @@
+<div class="galeria-audio">
+
+    <div class="btn">
+        <button routerLink="/galeriaprogramas" id= "galeriabtn">
+            <span>Todos los programas</span>
+        </button>
+    </div>
+ 
+ 
+    <h3>Últimos Programas</h3>
+
+ 
+        
+        <div class="programacnt">
+
+            <div class="container" *ngFor="let ep of ultimos">
+           
+            <img [src]="ep.portada || 'assets/default.png'" [alt]="ep.title">
+            <audio controls>
+                <source [src]="ep.audio">
+                Tu navegador no soporta el audio
+            </audio>
+            <div class="titulo">{{ ep.title }}</div>
+        </div>
+
+        </div>
+
+    </div>

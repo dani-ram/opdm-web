@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Plaster&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+.bio{
+    background-image: linear-gradient(to bottom,rgb(255, 188, 101),rgb(231, 131, 39));
+    width: 100vw;
+    height: 100vh;
+} 
+.text{
+  padding: 100px;
+  font-family: "Fascinate";
+  text-align: center;
+  color: antiquewhite;
+  font-size: x-large;
+}

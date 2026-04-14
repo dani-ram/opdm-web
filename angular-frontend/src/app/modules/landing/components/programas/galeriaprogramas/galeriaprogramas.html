@@ -1,0 +1,19 @@
+<div class="tracklist">
+
+    <h2>Todos los programas</h2>
+
+    <div class="track" *ngFor="let ep of episodios">
+
+      <img [src]="ep.portada || 'assets/default.png'">
+
+        <div class="track-header">
+
+          <div class="track-title">{{ ep.title }}</div>
+        
+        </div>
+
+
+    <audio #audio controls [src]="ep.audio" class="audio-line"></audio>
+        </div>
+</div>
+    

@@ -1,0 +1,39 @@
+    <div class="text">
+        <p>Envianos un mensaje!<br>
+           Eres oyente, artista o formas parte de un grupo?<br>
+        Escribenos, queremos saber vuestros gustos y dar a conocer a nuevos talentos musicales.<br>
+        </p>
+
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+       
+        <input type="text" [(ngModel)]="name" name="name" placeholder ="Tu nombre" required #nameCtrl="ngModel">
+        <div *ngIf="f.submitted && nameCtrl.invalid" class="error">
+            <p *ngIf="nameCtrl.errors?.['required']">
+            El nombre es obligatorio
+            </p>
+            </div>
+        
+        <input type="email" [(ngModel)]="email" name="email" required email #emailCtrl="ngModel" placeholder="Tu correo" >
+        <div *ngIf="f.submitted && emailCtrl.invalid" class="error"> 
+        <p *ngIf="emailCtrl.errors?.['required']">
+            El correo electrónico es obligatorio
+            </p>
+        <p *ngIf="emailCtrl.errors?.['email']">
+            El formato no es válido
+            </p>
+        </div>
+        
+        <textarea [(ngModel)]="message" name="message" placeholder="Escribe aqui tu mensaje"
+         required minlength="10" #messageCtrl="ngModel"></textarea>
+        <div *ngIf="f.submitted && messageCtrl.invalid" class="error">
+            <p *ngIf="messageCtrl.errors?.['required']">
+                El mensaje es obligatorio</p>
+            <p *ngIf="messageCtrl.errors?.['minlength']">
+                El mensaje debe tener al menos 10 caracteres.</p>
+            </div>
+
+         <button type="submit">Enviar</button>
+        
+        <p>{{ status }}</p>
+    </form>
+    </div>

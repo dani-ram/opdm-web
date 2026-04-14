@@ -1,0 +1,108 @@
+.galeria-audio{
+        background-image: linear-gradient(to bottom,rgb(255, 188, 101),rgb(231, 131, 39));
+
+}
+h3{
+   
+
+    color: black;
+    text-align: left;
+    font-family: "Roboto";
+    padding: 25px;
+    font-weight: normal;
+
+}
+
+.btn{
+
+    text-align: center;
+    margin: auto;    
+    padding: 30px 20px;
+
+}
+
+#galeriabtn{
+   
+    padding: 10px 10px;
+    background-color:  rgb(230, 148, 60);
+    font-family: "Roboto";
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+#galeriabtn:hover{
+    
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    background-color: darksalmon;
+    transition: all 0.4s ease;
+    border-radius: 10px;
+}
+
+.programacnt{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 30px;
+}
+.container{
+    background: (255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: box-shadow .3s ease;
+}
+
+.container img{
+    
+    height: 180px;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 300ms ease;
+}
+
+.container audio{
+
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(100%) scale(1);
+    transition: all 0.4s ease;
+
+}
+
+.container:hover audio{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+   
+}
+
+.container audio:hover{
+    transform: translateY(0) scale(1.05);
+}
+
+.container:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+
+}
+
+.container:hover img{
+
+    transform: scale(1.05);
+}
+.titulo{
+    font-size:  14px;
+    font-family: "Roboto";
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 700;
+}
