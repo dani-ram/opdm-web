@@ -14,11 +14,9 @@ COPY . .
 # Instalar dependencias Symfony
 RUN composer install --no-dev --optimize-autoloader
 
-# Limpiar cache en prod
-RUN php bin/console cache:clear --env=prod
-
 # Puerto dinámico de Render
 ENV PORT=10000
 EXPOSE 10000
 
 CMD php -S 0.0.0.0:$PORT -t public
+
