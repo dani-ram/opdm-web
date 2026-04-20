@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 WORKDIR /app
-COPY symfony-backend/ /public/
+COPY symfony-backend/ /app/
 # Instalar dependencias Symfony
 RUN composer install --no-dev --optimize-autoloader
 
