@@ -11,7 +11,7 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 ENV COMPOSER_MEMORY_LIMIT=-1
 
 WORKDIR /app
-COPY . .
+COPY symfony-backend/ .
 # Instalar dependencias Symfony
 RUN composer install --no-dev --optimize-autoloader --no-scripts
 
