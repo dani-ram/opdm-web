@@ -1,7 +1,7 @@
 nelmio_cors:
     defaults:
         origin_regex: true
-        allow_origin: ['https://opdmweb.netlify.app', 'http://localhost:4200']
+        allow_origin: ['https://opdmweb.netlify.app', 'http://localhost:4200', 'https://opdm-web-1.onrender.com']
         allow_methods: ['GET', 'OPTIONS', 'POST', 'PUT', 'PATCH', 'DELETE']
         allow_headers: ['Content-Type', 'Authorization']
         expose_headers: ['Link']
