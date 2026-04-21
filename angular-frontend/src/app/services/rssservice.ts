@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class Rssservice {
   
-  private apiUrl = 'https://opdm-web-1.onrender.com';
+  private apiUrl = 'https://opdm-web-1.onrender.com/episodios';
   constructor(private http: HttpClient){}
 
   getepisodios(): Observable<any[]> { 
